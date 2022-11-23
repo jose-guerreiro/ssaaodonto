@@ -1,0 +1,7 @@
+{
+  "name": "ssaaodonto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

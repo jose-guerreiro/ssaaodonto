@@ -10,6 +10,22 @@ const routes: Routes = [
   {
     path: 'folder/:id',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pagina/home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'doctor',
+    loadChildren: () => import('./pagina/doctor/doctor.module').then( m => m.DoctorPageModule)
+  },
+  {
+    path: 'patient',
+    loadChildren: () => import('./pagina/patient/patient.module').then( m => m.PatientPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pagina/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 

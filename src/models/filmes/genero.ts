@@ -1,4 +1,4 @@
-export class Produto {
+export class Genero {
 
   private id   : number;
   private nome : string;

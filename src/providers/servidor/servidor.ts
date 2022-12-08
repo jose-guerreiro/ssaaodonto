@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 @Injectable()
 export class ServidorProvider {
 
-  url: string = "http://localhost/curso/contatosList/ContatosCuso/php/";
+    url: string = "http://localhost/curso/contatosList/ContatosCuso/php/";
   http: any;
 
   /*constructor(public  http: Http) {

@@ -7,11 +7,14 @@
 
     if(!empty($_GET["email"]) || !empty($_GET["senha"])){
 
-      $conexao = new mysqli("localhost", "root", "", "agenda");
+      $conexao = new mysqli("localhost", "root", "Xml@MySql78", "ssaa_bd");
 
       $email= mysqli_real_escape_string($conexao,$_GET["email"]);
       $senha= mysqli_real_escape_string($conexao, $_GET["senha"]);
 
+      //Incluindo a conexão com banco de dados
+	    ///include_once("conexao2.php");
+	    //Buscar na tabela usuario o usuário que corresponde com os dados digitado no formulário
       $query="SELECT * FROM usuario where email='$email' and senha='$senha'";
       $result = $conexao->query($query);
 

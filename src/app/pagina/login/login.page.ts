@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 //import { map } from 'rxjs/operators';
-import { Http } from '@angular/http';
+//import { Http } from '@angular/http';
 
 
 @Component({
@@ -13,7 +13,7 @@ export class LoginPage implements OnInit {
   email : string = "";
   senha : string = "";
 
-  constructor(private alertCtrl: AlertController, public https: Http) { }
+  constructor(private alertCtrl: AlertController) { }
 
   ngOnInit() {
   }

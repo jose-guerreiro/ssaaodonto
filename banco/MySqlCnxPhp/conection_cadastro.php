@@ -1,27 +1,27 @@
 ﻿<?php
- /*************************************************************************************************************  
- * @author William F. Leite                                                                                   *  
- * Data: 20/06/2014                                                                                           *  
- * Descrição: Classe elaborada com o objetivo de auxlilar nas operações CRUDs em diversos SGBDS, possui       *  
- * funcionalidades para construir instruções de INSERT, UPDATE E DELETE onde as mesmas podem ser executadas   *  
- * nos principais SGBDs, exemplo SQL Server, MySQL e Firebird. Instruções SELECT são recebidas integralmente  *  
- * via parâmetro.                                                                                             *  
- *************************************************************************************************************/  
+ /*************************************************************************************************************
+ * @author William F. Leite                                                                                   *
+ * Data: 20/06/2014                                                                                           *
+ * Descrição: Classe elaborada com o objetivo de auxlilar nas operações CRUDs em diversos SGBDS, possui       *
+ * funcionalidades para construir instruções de INSERT, UPDATE E DELETE onde as mesmas podem ser executadas   *
+ * nos principais SGBDs, exemplo SQL Server, MySQL e Firebird. Instruções SELECT são recebidas integralmente  *
+ * via parâmetro.                                                                                             *
+ *************************************************************************************************************/
 
 /*
  * Constantes de parâmetros para configuração da conexão
  */
 define('SGBD', 'mysql');
 define('HOST', 'localhost');
-define('DBNAME', 'polo2');
+define('DBNAME', 'ssaa_bd');
 define('CHARSET', 'utf8');
 define('USER', 'root');
-define('PASSWORD', 'spider');
+define('PASSWORD', 'Xml@MySql78');
 define('SERVER', 'mysql');
 //define('SERVER', 'linux');
 
 class conexao {
-    
+
     /*
      * Atributo estático de conexão
      */
@@ -99,9 +99,9 @@ class conexao {
     }
 
     public static function isConectado(){
-        
+
         if(self::$pdo):
-            return true;            
+            return true;
         else:
             return false;
         endif;

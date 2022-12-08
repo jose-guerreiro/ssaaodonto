@@ -1,9 +1,43 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
+  <ion-toolbar color="primary">
+    <ion-menu-button slot="start"></ion-menu-button>
+    <ion-title>Efetuando login</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>E-mail</ion-label>
+      <ion-input type="name" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="8" offset="2">
+        <ion-button expand="block" (click)="logar()">Logar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4" offset="2">
+        <ion-button expand="block" (click)="NewSenha()">Esqueci a Senha</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button expand="block" (click)="NewCadastro()">Novo Cadastro</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+    <ion-item>
+      <ion-button (click)="presentAlert()">Click Me</ion-button>
+    </ion-item>
+  </ion-list>
 
 </ion-content>
